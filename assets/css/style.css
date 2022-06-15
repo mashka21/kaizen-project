@@ -623,15 +623,15 @@ html {
     overflow: hidden;
     padding: 1rem !important;
 }
-.owl-them 
+
 .slider-card .card-item{
     box-shadow:  5px 5px 15px -5px #d8d8d8;
-    min-height: 300px;
+    min-height: 300px !important;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background-color: #fff;
+    background-color: #fff !important;
     border-radius: 20px;
     position: relative;
 }
@@ -690,13 +690,16 @@ html {
     display: block;
     vertical-align: middle;
 }
-.carousel-indicators {
+/* .carousel-indicators {
     position: absolute;
     bottom: 10px;
     left: 0;
     width: 100%;
     visibility: visible !important;
     margin-top: 00.75rem;
+} */
+.owl-dots{
+    margin-top: -10px !important;
 }
 
 /* 
@@ -1162,6 +1165,85 @@ html {
 }
 .grid-item:hover {
     margin-top: -10px;
+}
+.grid-item{
+    transition: 0.3s;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+}
+.grid-item a{
+    background-color: #fff;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    text-decoration: inherit;
+}
+.grid-item img{
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+.grid-item a .topic{
+    padding: 0.75rem;
+}
+.topic h4 {
+    font-weight: 600;
+    font-size: 1.20rem;
+    line-height: 1.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+.grid-item .detail{
+    border-top: 1px solid #ececec;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+.detail strong {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    color: #000;
+}
+.detail a{
+    color: #27895D !important;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
+/* ------------------------------------------------------------------------ */
+                                /*Admission.html file style  */
+
+.Admission {
+    padding: 7px 12% !important;
+    padding-top: 60px !important;
+    background: #FFF !important;
+}
+.Admission h1{
+    font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+
+    text-align: left !important;
+}
+.Admission .grid {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+}
+.Admission .container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.grid-item:hover {
+    margin-top: 0;
 }
 .grid-item{
     transition: 0.3s;
