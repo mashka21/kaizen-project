@@ -1293,3 +1293,106 @@ html {
     cursor: pointer;
     text-decoration: inherit;
 }
+
+/* ------------------------------------------------------------------------ */
+                                /*service.html file style  */
+
+.service {
+    padding: 7px 12% !important;
+    padding-top: 90px !important;
+    background: #FFF !important;
+}
+.service h1{
+    font-size: 44px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center !important;
+}
+.service .grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+}
+.service .container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.grid-item:hover {
+    margin-top: 0;
+}
+.grid-item-service{
+    transition: 0.3s;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+}
+.grid-item-service a{
+    background-color: #fff;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    text-decoration: inherit;
+}
+.grid-item-service img{
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 300px;
+}
+/* .grid-item-service a .topic{
+    padding: 0.75rem;
+} */
+h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    color: #FFF !important;
+}
+.grid-item-service .detail{
+    padding: 0.75rem;
+    justify-content: space-between;
+}
+.one-class {
+    background-color: #47484F;
+    padding-top: 1rem;
+}
+.service .detail {
+    align-items: center;
+    height: 140px;
+    position: relative;
+}
+.line{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #fcac45;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.detail p {
+    text-align: center;
+    line-height: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.2rem;
+    font-size: small;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.detail a{
+    color: #27895D !important;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
